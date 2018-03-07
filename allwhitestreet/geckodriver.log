@@ -1764,3 +1764,8 @@ JavaScript error: resource://gre/modules/AddonManager.jsm, line 3137: TypeError:
 1505726293508	Marionette	INFO	Listening on port 60186
 1505726293584	Marionette	INFO	Listening on port 60186
 1505726293662	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520399653572	geckodriver	INFO	Listening on 127.0.0.1:51400
+1520399655752	geckodriver::marionette	INFO	Starting browser \\?\C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1520399658572	Marionette	INFO	Enabled via --marionette
+1520399662811	Marionette	INFO	Listening on port 51409
+1520399664456	Marionette	WARN	TLS certificate errors will be ignored for this session

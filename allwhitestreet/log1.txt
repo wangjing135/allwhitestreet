@@ -867,3 +867,549 @@ None
 2017-09-18 17:18:46 [scrapy.log] INFO: ***** Logging failed with this error:
 2017-09-18 17:18:46 [scrapy.log] INFO: ***** Logging failed with this error:
 2017-09-18 17:18:46 [scrapy.log] INFO: ***** Logging failed with this error:
+2018-03-07 13:14:09 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: allwhitestreet)
+2018-03-07 13:14:09 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'allwhitestreet', 'LOG_FILE': 'log1.txt', 'NEWSPIDER_MODULE': 'allwhitestreet.spiders', 'SPIDER_MODULES': ['allwhitestreet.spiders']}
+2018-03-07 13:14:10 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-03-07 13:14:10 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-07 13:14:10 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-07 13:14:10 [py.warnings] WARNING: C:\Users\wangjing\allwhitestreet\allwhitestreet\pipelines.py:15: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy import log
+
+2018-03-07 13:14:10 [scrapy.middleware] INFO: Enabled item pipelines:
+['allwhitestreet.pipelines.MysqlTwistedPipline']
+2018-03-07 13:14:10 [scrapy.core.engine] INFO: Spider opened
+2018-03-07 13:14:10 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-07 13:14:10 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-07 13:14:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/news/global?from=home> (referer: None)
+2018-03-07 13:14:15 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:51400/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "firefox", "acceptInsecureCerts": true}}, "desiredCapabilities": {"browserName": "firefox", "acceptInsecureCerts": true}}
+2018-03-07 13:14:24 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-03-07 13:14:24 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:51400/session/83a905a5-607d-4c39-aebf-af06b0b32589/url {"url": "https://wallstreetcn.com/news/global?from=home", "sessionId": "83a905a5-607d-4c39-aebf-af06b0b32589"}
+2018-03-07 13:14:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-03-07 13:14:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:51400/session/83a905a5-607d-4c39-aebf-af06b0b32589/execute/sync {"script": "window.scrollBy(0,2000)", "args": [], "sessionId": "83a905a5-607d-4c39-aebf-af06b0b32589"}
+2018-03-07 13:14:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-03-07 13:14:30 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:51400/session/83a905a5-607d-4c39-aebf-af06b0b32589/execute/sync {"script": "window.scrollBy(0,3000)", "args": [], "sessionId": "83a905a5-607d-4c39-aebf-af06b0b32589"}
+2018-03-07 13:14:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-03-07 13:14:33 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:51400/session/83a905a5-607d-4c39-aebf-af06b0b32589/execute/sync {"script": "window.scrollBy(0,4000)", "args": [], "sessionId": "83a905a5-607d-4c39-aebf-af06b0b32589"}
+2018-03-07 13:14:33 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-03-07 13:14:36 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:51400/session/83a905a5-607d-4c39-aebf-af06b0b32589/source {"sessionId": "83a905a5-607d-4c39-aebf-af06b0b32589"}
+2018-03-07 13:14:36 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-03-07 13:14:41 [whitestreet] INFO: /premium/articles/3245893
+2018-03-07 13:14:42 [whitestreet] INFO: /premium/articles/3245893
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245905
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245905
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245762
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245762
+2018-03-07 13:14:42 [whitestreet] INFO: https://weexcn.com/articles/3245809?from=wscnapp
+2018-03-07 13:14:42 [whitestreet] INFO: https://weexcn.com/articles/3245809?from=wscnapp
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245826
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245826
+2018-03-07 13:14:42 [whitestreet] INFO: /premium/articles/3245033
+2018-03-07 13:14:42 [whitestreet] INFO: /premium/articles/3245033
+2018-03-07 13:14:42 [whitestreet] INFO: https://awtmt.com/articles/3245796?from=wscn
+2018-03-07 13:14:42 [whitestreet] INFO: https://awtmt.com/articles/3245796?from=wscn
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245824
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245824
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245771
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245771
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245770
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245770
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245803
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245803
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245800
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245800
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245747
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245747
+2018-03-07 13:14:42 [whitestreet] INFO: /premium/articles/3245488
+2018-03-07 13:14:42 [whitestreet] INFO: /premium/articles/3245488
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245537
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245537
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245741
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245741
+2018-03-07 13:14:42 [whitestreet] INFO: https://awtmt.com/articles/3245683?from=wscn
+2018-03-07 13:14:42 [whitestreet] INFO: https://awtmt.com/articles/3245683?from=wscn
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245575
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245575
+2018-03-07 13:14:42 [whitestreet] INFO: /premium/articles/3245299
+2018-03-07 13:14:42 [whitestreet] INFO: /premium/articles/3245299
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245627
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245627
+2018-03-07 13:14:42 [whitestreet] INFO: https://goldtoutiao.com/articles/3245559
+2018-03-07 13:14:42 [whitestreet] INFO: https://goldtoutiao.com/articles/3245559
+2018-03-07 13:14:42 [whitestreet] INFO: /premium/articles/3245572
+2018-03-07 13:14:42 [whitestreet] INFO: /premium/articles/3245572
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245601
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245601
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245450
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245450
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245519
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245519
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245531
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245531
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245521
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245521
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245516
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245516
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245518
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245518
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245512
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245512
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245515
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245515
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245517
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245517
+2018-03-07 13:14:42 [whitestreet] INFO: /premium/articles/3245153
+2018-03-07 13:14:42 [whitestreet] INFO: /premium/articles/3245153
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245514
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245514
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245511
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245511
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245510
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245510
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245369
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245369
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245487
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245487
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245482
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245482
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245479
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245479
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3244596
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3244596
+2018-03-07 13:14:42 [whitestreet] INFO: /premium/articles/3244474
+2018-03-07 13:14:42 [whitestreet] INFO: /premium/articles/3244474
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245368
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245368
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245371
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245371
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245322
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245322
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245297
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245297
+2018-03-07 13:14:42 [whitestreet] INFO: /premium/articles/3245274
+2018-03-07 13:14:42 [whitestreet] INFO: /premium/articles/3245274
+2018-03-07 13:14:42 [whitestreet] INFO: https://awtmt.com/articles/3245002?from=wscn
+2018-03-07 13:14:42 [whitestreet] INFO: https://awtmt.com/articles/3245002?from=wscn
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245262
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245262
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245229
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245229
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245130
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245130
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245222
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245222
+2018-03-07 13:14:42 [whitestreet] INFO: https://xuangubao.cn/article/252419
+2018-03-07 13:14:42 [whitestreet] INFO: https://xuangubao.cn/article/252419
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245096
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245096
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245134
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245134
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3244840
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3244840
+2018-03-07 13:14:42 [whitestreet] INFO: https://awtmt.com/articles/3244889?from=wscn
+2018-03-07 13:14:42 [whitestreet] INFO: https://awtmt.com/articles/3244889?from=wscn
+2018-03-07 13:14:42 [whitestreet] INFO: /premium/articles/3244785
+2018-03-07 13:14:42 [whitestreet] INFO: /premium/articles/3244785
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245137
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245137
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245079
+2018-03-07 13:14:42 [whitestreet] INFO: /articles/3245079
+2018-03-07 13:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3245893> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3245488> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245770> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3245893>
+None
+2018-03-07 13:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245800> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245800> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245803> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245747> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245747> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245803> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245771> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245770> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245771> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3245488>
+None
+2018-03-07 13:14:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245770>
+None
+2018-03-07 13:14:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245800>
+None
+2018-03-07 13:14:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245800>
+None
+2018-03-07 13:14:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245803>
+None
+2018-03-07 13:14:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245747>
+None
+2018-03-07 13:14:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245747>
+None
+2018-03-07 13:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245824> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245824> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245803>
+None
+2018-03-07 13:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://awtmt.com/articles/3245796?from=wscn> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245771>
+None
+2018-03-07 13:14:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245770>
+None
+2018-03-07 13:14:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245771>
+None
+2018-03-07 13:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3244785> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3244785> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3244840> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3244840> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245824>
+None
+2018-03-07 13:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245824>
+None
+2018-03-07 13:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://awtmt.com/articles/3245796?from=wscn>
+None
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://awtmt.com/articles/3245796?from=wscn> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3244785>
+None
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245079> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3244785>
+None
+2018-03-07 13:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3244840>
+None
+2018-03-07 13:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3244840>
+None
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245222> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://awtmt.com/articles/3245796?from=wscn>
+None
+2018-03-07 13:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245079>
+None
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245134> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245134> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245222> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245096> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245096> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245222>
+None
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://xuangubao.cn/article/252419> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245079> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245137> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://xuangubao.cn/article/252419> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245137> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245134>
+None
+2018-03-07 13:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245134>
+None
+2018-03-07 13:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245222>
+None
+2018-03-07 13:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245096>
+None
+2018-03-07 13:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245096>
+None
+2018-03-07 13:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xuangubao.cn/article/252419>
+None
+2018-03-07 13:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245079>
+None
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://awtmt.com/articles/3245002?from=wscn> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245130> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245130> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245229> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245229> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245262> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://awtmt.com/articles/3245002?from=wscn> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245262> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3245274> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3245274> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245137>
+None
+2018-03-07 13:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xuangubao.cn/article/252419>
+None
+2018-03-07 13:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245137>
+None
+2018-03-07 13:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://awtmt.com/articles/3245002?from=wscn>
+None
+2018-03-07 13:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245130>
+None
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245297> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245371> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245297> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://awtmt.com/articles/3244889?from=wscn> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245371> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245130>
+None
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245229>
+None
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245229>
+None
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245262>
+None
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://awtmt.com/articles/3245002?from=wscn>
+None
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://awtmt.com/articles/3244889?from=wscn> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245262>
+None
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3245274>
+None
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3245274>
+None
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245297>
+None
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245371>
+None
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245297>
+None
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245322> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245322> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://awtmt.com/articles/3244889?from=wscn>
+None
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245371>
+None
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245368> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245368> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://awtmt.com/articles/3244889?from=wscn>
+None
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3244474> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3244474> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245322>
+None
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245322>
+None
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245368>
+None
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245368>
+None
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3244474>
+None
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3244474>
+None
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3244596> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3244596> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3244596>
+None
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245369> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3244596>
+None
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245369> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245479> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245479> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245482> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245487> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245487> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245369>
+None
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245510> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245369>
+None
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245511> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245511> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245479>
+None
+2018-03-07 13:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245479>
+None
+2018-03-07 13:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245510> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245482> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245482>
+None
+2018-03-07 13:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245487>
+None
+2018-03-07 13:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3245153> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245487>
+None
+2018-03-07 13:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245510>
+None
+2018-03-07 13:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245511>
+None
+2018-03-07 13:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245511>
+None
+2018-03-07 13:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3245153> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245510>
+None
+2018-03-07 13:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245482>
+None
+2018-03-07 13:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3245153>
+None
+2018-03-07 13:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3245153>
+None
+2018-03-07 13:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245515> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245514> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245515>
+None
+2018-03-07 13:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245515> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245514>
+None
+2018-03-07 13:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245517> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245517> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245512> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245515>
+None
+2018-03-07 13:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245514> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245512> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245521> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245516> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245517>
+None
+2018-03-07 13:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245517>
+None
+2018-03-07 13:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245521> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245512>
+None
+2018-03-07 13:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245514>
+None
+2018-03-07 13:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245512>
+None
+2018-03-07 13:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245516> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245521>
+None
+2018-03-07 13:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245516>
+None
+2018-03-07 13:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245518> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245519> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245519> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245531> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245521>
+None
+2018-03-07 13:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245450> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245518> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245516>
+None
+2018-03-07 13:14:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245531> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245450> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245518>
+None
+2018-03-07 13:14:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245519>
+None
+2018-03-07 13:14:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245519>
+None
+2018-03-07 13:14:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245531>
+None
+2018-03-07 13:14:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245450>
+None
+2018-03-07 13:14:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245518>
+None
+2018-03-07 13:14:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245531>
+None
+2018-03-07 13:14:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245450>
+None
+2018-03-07 13:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3245572> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245601> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3245572> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245601> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3245572>
+None
+2018-03-07 13:14:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245601>
+None
+2018-03-07 13:14:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3245572>
+None
+2018-03-07 13:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://goldtoutiao.com/articles/3245559> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245601>
+None
+2018-03-07 13:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245575> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245741> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245575> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://goldtoutiao.com/articles/3245559>
+None
+2018-03-07 13:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3245488> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://awtmt.com/articles/3245683?from=wscn> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245627> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://goldtoutiao.com/articles/3245559> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://awtmt.com/articles/3245683?from=wscn> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3245299> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245627> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3245033> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245537> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245537> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245741> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245575>
+None
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245741>
+None
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245575>
+None
+2018-03-07 13:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3245299> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3245033> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3245488>
+None
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://awtmt.com/articles/3245683?from=wscn>
+None
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245627>
+None
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://awtmt.com/articles/3245683?from=wscn>
+None
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://goldtoutiao.com/articles/3245559>
+None
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3245299>
+None
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245627>
+None
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245537>
+None
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3245033>
+None
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245537>
+None
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245741>
+None
+2018-03-07 13:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245905> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245762> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3245299>
+None
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3245033>
+None
+2018-03-07 13:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245762> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245826> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245826> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3245905> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3245893> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weexcn.com/articles/3245809?from=wscnapp> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weexcn.com/articles/3245809?from=wscnapp> (referer: https://wallstreetcn.com/news/global?from=home)
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245905>
+None
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245762>
+None
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245762>
+None
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245826>
+None
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245826>
+None
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3245905>
+None
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3245893>
+None
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weexcn.com/articles/3245809?from=wscnapp>
+None
+2018-03-07 13:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weexcn.com/articles/3245809?from=wscnapp>
+None
+2018-03-07 13:14:48 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-03-07 13:14:48 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 34843,
+ 'downloader/request_count': 121,
+ 'downloader/request_method_count/GET': 121,
+ 'downloader/response_bytes': 2461121,
+ 'downloader/response_count': 121,
+ 'downloader/response_status_count/200': 121,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 7, 5, 14, 48, 623767),
+ 'item_scraped_count': 120,
+ 'log_count/DEBUG': 254,
+ 'log_count/INFO': 127,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 121,
+ 'scheduler/dequeued': 121,
+ 'scheduler/dequeued/memory': 121,
+ 'scheduler/enqueued': 121,
+ 'scheduler/enqueued/memory': 121,
+ 'start_time': datetime.datetime(2018, 3, 7, 5, 14, 10, 497563)}
+2018-03-07 13:14:48 [scrapy.core.engine] INFO: Spider closed (finished)
