@@ -1,0 +1,869 @@
+2017-09-18 17:18:05 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: allwhitestreet)
+2017-09-18 17:18:05 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'allwhitestreet', 'LOG_FILE': 'log1.txt', 'NEWSPIDER_MODULE': 'allwhitestreet.spiders', 'SPIDER_MODULES': ['allwhitestreet.spiders']}
+2017-09-18 17:18:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-09-18 17:18:06 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-18 17:18:06 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-18 17:18:06 [py.warnings] WARNING: C:\Users\wangjing\allwhitestreet\allwhitestreet\pipelines.py:15: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy import log
+
+2017-09-18 17:18:06 [scrapy.middleware] INFO: Enabled item pipelines:
+['allwhitestreet.pipelines.MysqlTwistedPipline']
+2017-09-18 17:18:06 [scrapy.core.engine] INFO: Spider opened
+2017-09-18 17:18:06 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-18 17:18:06 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-09-18 17:18:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/news/global?from=home> (referer: None)
+2017-09-18 17:18:10 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60179/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "firefox", "acceptInsecureCerts": true}}, "desiredCapabilities": {"browserName": "firefox", "acceptInsecureCerts": true}}
+2017-09-18 17:18:13 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-09-18 17:18:13 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60179/session/2d28d359-a515-4065-983e-a3f9f2dd8d31/url {"url": "https://wallstreetcn.com/news/global?from=home", "sessionId": "2d28d359-a515-4065-983e-a3f9f2dd8d31"}
+2017-09-18 17:18:21 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-09-18 17:18:21 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60179/session/2d28d359-a515-4065-983e-a3f9f2dd8d31/execute/sync {"script": "window.scrollBy(0,2000)", "args": [], "sessionId": "2d28d359-a515-4065-983e-a3f9f2dd8d31"}
+2017-09-18 17:18:21 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-09-18 17:18:24 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60179/session/2d28d359-a515-4065-983e-a3f9f2dd8d31/execute/sync {"script": "window.scrollBy(0,3000)", "args": [], "sessionId": "2d28d359-a515-4065-983e-a3f9f2dd8d31"}
+2017-09-18 17:18:24 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-09-18 17:18:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60179/session/2d28d359-a515-4065-983e-a3f9f2dd8d31/execute/sync {"script": "window.scrollBy(0,4000)", "args": [], "sessionId": "2d28d359-a515-4065-983e-a3f9f2dd8d31"}
+2017-09-18 17:18:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-09-18 17:18:30 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60179/session/2d28d359-a515-4065-983e-a3f9f2dd8d31/source {"sessionId": "2d28d359-a515-4065-983e-a3f9f2dd8d31"}
+2017-09-18 17:18:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2017-09-18 17:18:35 [whitestreet] INFO: /articles/3031341
+2017-09-18 17:18:35 [whitestreet] INFO: /articles/3031341
+2017-09-18 17:18:35 [whitestreet] INFO: /articles/3031380
+2017-09-18 17:18:35 [whitestreet] INFO: /articles/3031380
+2017-09-18 17:18:35 [whitestreet] INFO: /articles/3031342
+2017-09-18 17:18:35 [whitestreet] INFO: /articles/3031342
+2017-09-18 17:18:35 [whitestreet] INFO: /articles/3031366
+2017-09-18 17:18:35 [whitestreet] INFO: /articles/3031366
+2017-09-18 17:18:35 [whitestreet] INFO: https://awtmt.com/articles/3031360?from=wscn
+2017-09-18 17:18:35 [whitestreet] INFO: https://awtmt.com/articles/3031360?from=wscn
+2017-09-18 17:18:35 [whitestreet] INFO: /articles/3031361
+2017-09-18 17:18:35 [whitestreet] INFO: /articles/3031361
+2017-09-18 17:18:35 [whitestreet] INFO: /articles/3031354
+2017-09-18 17:18:35 [whitestreet] INFO: /articles/3031354
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031338
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031338
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031330
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031330
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3030877
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3030877
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3031215
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3031215
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031315
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031315
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031306
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031306
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031300
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031300
+2017-09-18 17:18:36 [whitestreet] INFO: https://goldtoutiao.com/articles/3031285
+2017-09-18 17:18:36 [whitestreet] INFO: https://goldtoutiao.com/articles/3031285
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3030978
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3030978
+2017-09-18 17:18:36 [whitestreet] INFO: https://weexcn.com/articles/3031290?from=wscnapp
+2017-09-18 17:18:36 [whitestreet] INFO: https://weexcn.com/articles/3031290?from=wscnapp
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031193
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031193
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031291
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031291
+2017-09-18 17:18:36 [whitestreet] INFO: https://awtmt.com/articles/3031272?from=wscn
+2017-09-18 17:18:36 [whitestreet] INFO: https://awtmt.com/articles/3031272?from=wscn
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031292
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031292
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031282
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031282
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031283
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031283
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3028302
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3028302
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031286
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031286
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031281
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031281
+2017-09-18 17:18:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031341> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031287
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031287
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031259
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031259
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3030491
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3030491
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031251
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031251
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031253
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031253
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031249
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031249
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3031210
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3031210
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031256
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031256
+2017-09-18 17:18:36 [whitestreet] INFO: https://m.xuangubao.cn/article/160267
+2017-09-18 17:18:36 [whitestreet] INFO: https://m.xuangubao.cn/article/160267
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031231
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031231
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3031089
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3031089
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031190
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031190
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3030941
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3030941
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031177
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031177
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031185
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031185
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031182
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031182
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3030774
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3030774
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031172
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031172
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031166
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031166
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031164
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031164
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031168
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031168
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031160
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031160
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3030962
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3030962
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031162
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031162
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031146
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031146
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031137
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031137
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031153
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031153
+2017-09-18 17:18:36 [whitestreet] INFO: https://awtmt.com/articles/3031090?from=wscn
+2017-09-18 17:18:36 [whitestreet] INFO: https://awtmt.com/articles/3031090?from=wscn
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031138
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031138
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031103
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031103
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3031087
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3031087
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031096
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031096
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031088
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031088
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031086
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031086
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031091
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031091
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3031045
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3031045
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031084
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031084
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031083
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031083
+2017-09-18 17:18:36 [whitestreet] INFO: https://weexcn.com/articles/3030676
+2017-09-18 17:18:36 [whitestreet] INFO: https://weexcn.com/articles/3030676
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031077
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031077
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031081
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031081
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3031068
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3031068
+2017-09-18 17:18:36 [whitestreet] INFO: https://awtmt.com/articles/3031017?from=wscn
+2017-09-18 17:18:36 [whitestreet] INFO: https://awtmt.com/articles/3031017?from=wscn
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3030937
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3030937
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031065
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031065
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3031066
+2017-09-18 17:18:36 [whitestreet] INFO: /premium/articles/3031066
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031064
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031064
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031063
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031063
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031062
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031062
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031006
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031006
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031057
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031057
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031059
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031059
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031061
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3031061
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3030891
+2017-09-18 17:18:36 [whitestreet] INFO: /articles/3030891
+2017-09-18 17:18:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031341>
+None
+2017-09-18 17:18:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031342> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031342>
+None
+2017-09-18 17:18:36 [py.warnings] WARNING: C:\Users\wangjing\allwhitestreet\allwhitestreet\pipelines.py:75: ScrapyDeprecationWarning: log.msg has been deprecated, create a python logger and log through it instead
+  log.msg('***** Logging failed with this error:', str(e), level=log.INFO, spider=None)
+
+2017-09-18 17:18:36 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031380> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031380>
+None
+2017-09-18 17:18:37 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031380> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031366> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031342> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031380>
+None
+2017-09-18 17:18:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031354> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031354> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031366> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031366>
+None
+2017-09-18 17:18:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031342>
+None
+2017-09-18 17:18:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031354>
+None
+2017-09-18 17:18:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031354>
+None
+2017-09-18 17:18:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031366>
+None
+2017-09-18 17:18:37 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://awtmt.com/articles/3031360?from=wscn> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://awtmt.com/articles/3031360?from=wscn> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:37 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031361> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031361> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:37 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://awtmt.com/articles/3031360?from=wscn>
+None
+2017-09-18 17:18:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://awtmt.com/articles/3031360?from=wscn>
+None
+2017-09-18 17:18:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031361>
+None
+2017-09-18 17:18:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031361>
+None
+2017-09-18 17:18:38 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:38 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031281> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031341> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031281>
+None
+2017-09-18 17:18:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031341>
+None
+2017-09-18 17:18:38 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:38 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:38 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:38 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:38 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:38 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:38 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:38 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031061> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031061> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031061>
+None
+2017-09-18 17:18:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031281> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031059> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3030891> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031286> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031061>
+None
+2017-09-18 17:18:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031281>
+None
+2017-09-18 17:18:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031059>
+None
+2017-09-18 17:18:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3030891>
+None
+2017-09-18 17:18:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031286>
+None
+2017-09-18 17:18:39 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:39 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:39 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:39 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031059> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3030891> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031059>
+None
+2017-09-18 17:18:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3030891>
+None
+2017-09-18 17:18:39 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031006> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031006>
+None
+2017-09-18 17:18:39 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:39 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:39 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031057> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031057> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031006> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031057>
+None
+2017-09-18 17:18:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031057>
+None
+2017-09-18 17:18:39 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031062> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:39 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031062> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:39 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031006>
+None
+2017-09-18 17:18:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031062>
+None
+2017-09-18 17:18:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031062>
+None
+2017-09-18 17:18:40 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:40 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:40 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3031066> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://awtmt.com/articles/3031017?from=wscn> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3031066> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031064> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031064> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://awtmt.com/articles/3031017?from=wscn> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3031066>
+None
+2017-09-18 17:18:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://awtmt.com/articles/3031017?from=wscn>
+None
+2017-09-18 17:18:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3031066>
+None
+2017-09-18 17:18:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3031068> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031064>
+None
+2017-09-18 17:18:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031064>
+None
+2017-09-18 17:18:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://awtmt.com/articles/3031017?from=wscn>
+None
+2017-09-18 17:18:40 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:40 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:40 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3031068>
+None
+2017-09-18 17:18:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031065> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031063> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031065> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3031068> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031065>
+None
+2017-09-18 17:18:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031063>
+None
+2017-09-18 17:18:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031065>
+None
+2017-09-18 17:18:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3031068>
+None
+2017-09-18 17:18:40 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:40 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031063> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3030937> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:40 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031063>
+None
+2017-09-18 17:18:40 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:40 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3030937>
+None
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031083> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031083> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031077> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031077> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3030937> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weexcn.com/articles/3030676> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weexcn.com/articles/3030676> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031083>
+None
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031081> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031081> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031083>
+None
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3031045> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3031045> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031077>
+None
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031077>
+None
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3030937>
+None
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weexcn.com/articles/3030676>
+None
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weexcn.com/articles/3030676>
+None
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031084> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031081>
+None
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031081>
+None
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3031045>
+None
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3031045>
+None
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031088> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031084> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031084>
+None
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031088> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031088>
+None
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://awtmt.com/articles/3031090?from=wscn> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031084>
+None
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031088>
+None
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://awtmt.com/articles/3031090?from=wscn> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031091> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031091> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3031087> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://awtmt.com/articles/3031090?from=wscn>
+None
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3031087> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031086> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031096> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://awtmt.com/articles/3031090?from=wscn>
+None
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031086> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031091>
+None
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031091>
+None
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3031087>
+None
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3031087>
+None
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031086>
+None
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031096>
+None
+2017-09-18 17:18:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031086>
+None
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031103> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031096> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031153> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031153> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031103> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:41 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031103>
+None
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031096>
+None
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031153>
+None
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031153>
+None
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031103>
+None
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031162> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031137> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031162> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031138> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031137> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031162>
+None
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031137>
+None
+2017-09-18 17:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031138> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031162>
+None
+2017-09-18 17:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031160> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031138>
+None
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031137>
+None
+2017-09-18 17:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3030962> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3030962> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031138>
+None
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031160>
+None
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031168> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031160> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031146> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3030962>
+None
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3030962>
+None
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031168>
+None
+2017-09-18 17:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031146> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031164> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031160>
+None
+2017-09-18 17:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031168> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031164> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031166> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031146>
+None
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031146>
+None
+2017-09-18 17:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3030774> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031166> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031164>
+None
+2017-09-18 17:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031172> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3030774> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031172> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031168>
+None
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031164>
+None
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031166>
+None
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3030774>
+None
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031166>
+None
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031172>
+None
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3030774>
+None
+2017-09-18 17:18:42 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031172>
+None
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031177> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031177> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3030941> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3030941> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031177>
+None
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031185> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031177>
+None
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3030941>
+None
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3030941>
+None
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031185> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031182> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031182> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3031089> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031185>
+None
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3031089> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031185>
+None
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031182>
+None
+2017-09-18 17:18:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031182>
+None
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031190> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3031089>
+None
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3031210> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://m.xuangubao.cn/article/160267> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3031089>
+None
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031190>
+None
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://m.xuangubao.cn/article/160267> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031190> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3031210> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3031210>
+None
+2017-09-18 17:18:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://m.xuangubao.cn/article/160267>
+None
+2017-09-18 17:18:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://m.xuangubao.cn/article/160267>
+None
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031190>
+None
+2017-09-18 17:18:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3031210>
+None
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031249> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031249> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031249>
+None
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031231> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031256> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031256> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031253> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031231> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031253> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031249>
+None
+2017-09-18 17:18:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031231>
+None
+2017-09-18 17:18:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031256>
+None
+2017-09-18 17:18:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031256>
+None
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3030491> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3030491> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031253>
+None
+2017-09-18 17:18:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031231>
+None
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031251> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031253>
+None
+2017-09-18 17:18:44 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:44 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:44 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3030491>
+None
+2017-09-18 17:18:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3030491>
+None
+2017-09-18 17:18:44 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031251> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031251>
+None
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031287> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:44 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031251>
+None
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031286> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://awtmt.com/articles/3031272?from=wscn> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031287> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://awtmt.com/articles/3031272?from=wscn> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031287>
+None
+2017-09-18 17:18:44 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weexcn.com/articles/3031290?from=wscnapp> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031286>
+None
+2017-09-18 17:18:44 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://awtmt.com/articles/3031272?from=wscn>
+None
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031259> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weexcn.com/articles/3031290?from=wscnapp> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031259> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031287>
+None
+2017-09-18 17:18:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://awtmt.com/articles/3031272?from=wscn>
+None
+2017-09-18 17:18:44 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:44 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3028302> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3028302> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weexcn.com/articles/3031290?from=wscnapp>
+None
+2017-09-18 17:18:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031259>
+None
+2017-09-18 17:18:44 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weexcn.com/articles/3031290?from=wscnapp>
+None
+2017-09-18 17:18:44 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:44 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031292> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031259>
+None
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031283> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3028302>
+None
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031283> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3028302>
+None
+2017-09-18 17:18:44 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:44 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:44 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031292>
+None
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031291> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031283>
+None
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031282> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031291> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031292> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031283>
+None
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031193> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3030978> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031282> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3030978> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031291>
+None
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031282>
+None
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031291>
+None
+2017-09-18 17:18:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031193> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031292>
+None
+2017-09-18 17:18:45 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:45 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:45 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031193>
+None
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3030978>
+None
+2017-09-18 17:18:45 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031282>
+None
+2017-09-18 17:18:45 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3030978>
+None
+2017-09-18 17:18:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031300> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031306> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031300> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031306> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:45 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:45 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:45 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031193>
+None
+2017-09-18 17:18:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3031215> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/premium/articles/3031215> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031315> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031300>
+None
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031306>
+None
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031300>
+None
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031306>
+None
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3031215>
+None
+2017-09-18 17:18:45 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/premium/articles/3031215>
+None
+2017-09-18 17:18:45 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:45 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031315> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:45 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:45 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031315>
+None
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031315>
+None
+2017-09-18 17:18:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031338> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031338> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031338>
+None
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031338>
+None
+2017-09-18 17:18:45 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:45 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:45 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:45 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031330> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3031330> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://goldtoutiao.com/articles/3031285> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:45 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:45 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://goldtoutiao.com/articles/3031285> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3030877> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wallstreetcn.com/articles/3030877> (referer: https://wallstreetcn.com/news/global?from=home)
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031330>
+None
+2017-09-18 17:18:45 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3031330>
+None
+2017-09-18 17:18:45 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://goldtoutiao.com/articles/3031285>
+None
+2017-09-18 17:18:45 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://goldtoutiao.com/articles/3031285>
+None
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3030877>
+None
+2017-09-18 17:18:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wallstreetcn.com/articles/3030877>
+None
+2017-09-18 17:18:45 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-09-18 17:18:45 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 46363,
+ 'downloader/request_count': 161,
+ 'downloader/request_method_count/GET': 161,
+ 'downloader/response_bytes': 2651487,
+ 'downloader/response_count': 161,
+ 'downloader/response_status_count/200': 161,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 9, 18, 9, 18, 45, 945532),
+ 'item_scraped_count': 160,
+ 'log_count/DEBUG': 334,
+ 'log_count/INFO': 324,
+ 'log_count/WARNING': 2,
+ 'request_depth_max': 1,
+ 'response_received_count': 161,
+ 'scheduler/dequeued': 161,
+ 'scheduler/dequeued/memory': 161,
+ 'scheduler/enqueued': 161,
+ 'scheduler/enqueued/memory': 161,
+ 'start_time': datetime.datetime(2017, 9, 18, 9, 18, 6, 245446)}
+2017-09-18 17:18:45 [scrapy.core.engine] INFO: Spider closed (finished)
+2017-09-18 17:18:46 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:46 [scrapy.log] INFO: ***** Logging failed with this error:
+2017-09-18 17:18:46 [scrapy.log] INFO: ***** Logging failed with this error:
